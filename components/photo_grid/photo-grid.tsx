@@ -1,27 +1,32 @@
 import React, { useState } from "react"
+import { Artwork } from "../../types"
 import ShadowBox from "./shadow-box"
 
-function PhotoGrid(props) {
+type PhotoGridProps = {
+  artworks: Artwork[]
+}
+
+const PhotoGrid = ({ artworks }: PhotoGridProps) => {
   const [selectedArtwork, setSelectedArtwork] = useState(-1)
 
-  const selectArtwork = (id) => {
+  const selectArtwork = (id: number) => {
     setSelectedArtwork(id)
   }
 
   const nextArtworkLeft = () => {
-    const n = props.artworks.length
+    const n = artworks.length
     const left = (selectedArtwork - 1 + n) % n
     setSelectedArtwork(left)
   }
 
   const nextArtworkRight = () => {
-    const right = (selectedArtwork + 1) % props.artworks.length
+    const right = (selectedArtwork + 1) % artworks.length
     setSelectedArtwork(right)
   }
 
   return (
     <div className="photo-grid">
-      {props.artworks.map((photo, id) => (
+      {artworks.map((photo, id) => (
         <img
           key={id}
           className="grid-photo"
@@ -31,7 +36,7 @@ function PhotoGrid(props) {
       ))}
       {selectedArtwork > -1 && (
         <ShadowBox
-          artwork={props.artworks[selectedArtwork]}
+          artwork={artworks[selectedArtwork]}
           onClose={() => selectArtwork(-1)}
           onLeft={nextArtworkLeft}
           onRight={nextArtworkRight}

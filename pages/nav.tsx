@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Nav() {
-
+const Nav = () => {
   return (
     <div className="alignNav">
       <ul className="nav">
@@ -30,3 +29,5 @@ export default function Nav() {
     </div>
   )
 }
+
+export default Nav

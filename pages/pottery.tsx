@@ -1,17 +1,21 @@
-import React from 'react'
-import Head from 'next/head'
-import PhotoSlider from '../components/photo_slider/photo-slider'
-import PhotoGrid from '../components/photo_grid/photo-grid'
-import { getAllArtworks } from '../lib/util'
+import React from "react"
+import Head from "next/head"
+import PhotoSlider from "../components/photo_slider/photo-slider"
+import PhotoGrid from "../components/photo_grid/photo-grid"
+import { getAllArtworks } from "../lib/util"
 
-export default function Pottery(props) {
+type PotteryProps = {
+  allArtworks: any[]
+}
+
+const Pottery = ({ allArtworks }: PotteryProps) => {
   return (
     <div className="align-main-pottery">
       <Head>
         <title>playing in dirt</title>
       </Head>
       {/* <PhotoSlider artworks={props.allArtworks}></PhotoSlider> */}
-      <PhotoGrid artworks={props.allArtworks}></PhotoGrid>
+      <PhotoGrid artworks={allArtworks}></PhotoGrid>
     </div>
   )
 }
@@ -23,6 +27,8 @@ export async function getStaticProps() {
   const allArtworks = getAllArtworks()
 
   return {
-    props: { allArtworks }
+    props: { allArtworks },
   }
 }
+
+export default Pottery

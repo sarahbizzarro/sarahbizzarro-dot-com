@@ -1,8 +1,8 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React from "react"
+import Link from "next/link"
+import Head from "next/head"
 
-export default function Connect() {
+const Connect = () => {
   return (
     <div className="alignMain">
       <Head>
@@ -15,12 +15,11 @@ export default function Connect() {
           </Link>
         </li>
         <li>
-          <Link href="https://github.com/sarahbizzarro">
-            github
-          </Link>
+          <Link href="https://github.com/sarahbizzarro">github</Link>
         </li>
       </ul>
     </div>
   )
 }
 
+export default Connect

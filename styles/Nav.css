@@ -33,14 +33,14 @@
     padding: 10px;
     margin: 0;
     width: 100%;
-
+    display: flex;
+    justify-content: space-between;
     background: white;
     white-space: nowrap;
   }
   .nav > li {
     margin-bottom: 4px;
     display: inline;
-    padding-right: 15px;
   }
 
   .nav > li > a {
