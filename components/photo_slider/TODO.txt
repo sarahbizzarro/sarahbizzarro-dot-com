@@ -1,0 +1,19 @@
+{/*
+
+features of photo slider:
+- import photos
+- fixed with and size of slider, and photo should be responsive to that
+- onClick the arrows go to the next photo
+let button and rigth button compoent that take in props such as onclick and tell it
+- title, year, and medium are displayed on the bottom 
+- arrows should disappear after a second or so of no intereaction with the gallery (fade)
+- arrows should subetly highlight/shadow/innerglow/outerglow or invert colors 
+  when interacted with
+- upon changing photo, fade transition to the next/prev one - NOT slide
+- looping scroll
+- gallery view implemented when photo is clicked
+    - photo comes to the forefront of the screen with an almost opaque black bg
+    - if click on black then exits out of gallery mode
+    - not sure if i want to be able to scroll in gallery mode
+
+*/}

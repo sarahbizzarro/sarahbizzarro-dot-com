@@ -1,0 +1,48 @@
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    padding-right: 10px;
+  }
+}
+
+.align-top {
+  vertical-align: text-top;
+}
+
+.post-preview {
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.preview {
+  display: inline;
+  padding-right: 5px;
+}
+
+.date {
+  display: inline;
+}
+
+.readmore {
+  text-decoration: underline;
+  display: inline;
+  font-weight: 325;
+  color: #0000ee;
+}
+
+.blog-post-container {
+  margin-top: -10px;
+  padding-bottom: 200px;
+}
+
+.blog-post-container > p {
+  margin-top: 0;
+}

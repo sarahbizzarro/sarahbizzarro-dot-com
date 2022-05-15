@@ -1,0 +1,51 @@
+.alignNav {
+  vertical-align: text-top;
+  width: 300px;
+  max-width: 300px;
+}
+
+.nav {
+  padding-left: 100px;
+  position: fixed;
+  padding-top: 200px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav > li {
+  margin-bottom: 4px;
+}
+
+.nav > li > a {
+  text-decoration: underline;
+  font-weight: 325;
+  color: #0000ee;
+}
+
+@media only screen and (max-width: 640px) {
+  .alignNav {
+    margin: 0;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+
+    background: white;
+    white-space: nowrap;
+  }
+  .nav > li {
+    margin-bottom: 4px;
+    display: inline;
+    padding-right: 15px;
+  }
+
+  .nav > li > a {
+    text-decoration: underline;
+    font-weight: 325;
+    color: #0000ee;
+  }
+}

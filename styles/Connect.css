@@ -1,0 +1,15 @@
+.connect {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.connect > li {
+  margin-bottom: 4px;
+}
+
+.connect > li > a {
+  text-decoration: underline;
+  font-weight: 325;
+  color: #0000ee;
+}
