@@ -2,7 +2,7 @@ import React from "react"
 import BlogPost from "../../components/blog-post"
 import { getAllPosts, getPostBySlug } from "../../lib/util"
 import markdownToHtml from "../../lib/markdownToHtml"
-import { Post as PostData } from "../../types"
+import { Post as PostData } from "@types"
 
 type PostProps = {
   post: PostData

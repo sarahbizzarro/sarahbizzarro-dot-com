@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Artwork } from "../../types"
+import { Artwork } from "@types"
 import ShadowBox from "./shadow-box"
 
 type PhotoGridProps = {

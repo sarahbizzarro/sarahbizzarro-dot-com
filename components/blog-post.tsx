@@ -1,6 +1,6 @@
 import React from "react"
 import Head from "next/head"
-import { Post } from "../types"
+import { Post } from "@types"
 
 type BlogPostProps = {
   post: Post

@@ -2,7 +2,7 @@ import React from "react"
 import Head from "next/head"
 import PostPreview from "../components/post-preview"
 import { getAllPosts } from "../lib/util"
-import { Post } from "../types"
+import { Post } from "@types"
 
 type BlogProps = {
   allPosts: Post[]

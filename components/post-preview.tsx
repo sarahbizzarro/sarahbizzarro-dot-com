@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { Post } from "../types"
+import { Post } from "@types"
 
 type PostPreviewProps = {
   post: Post

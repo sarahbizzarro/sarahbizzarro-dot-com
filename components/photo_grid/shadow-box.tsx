@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Artwork } from "../../types"
+import { Artwork } from "@types"
 
 type ShadowBoxProps = {
   artwork: Artwork
