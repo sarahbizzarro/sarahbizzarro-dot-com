@@ -90,7 +90,7 @@ body {
 }
 
 .photo-grid {
-  max-width: 900px;
+  max-width: 1000px;
   flex-wrap: wrap;
   width: 100%;
   display: flex;

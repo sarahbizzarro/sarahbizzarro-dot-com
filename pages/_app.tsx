@@ -6,6 +6,7 @@ import "../styles/Nav.css"
 import "../styles/Pottery.css"
 import "../styles/Blog.css"
 import "../styles/Connect.css"
+import "../styles/Sabbatical.css"
 
 const MyApp = ({ Component, pageProps }) => {
   return (

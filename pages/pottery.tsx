@@ -20,7 +20,7 @@ const Pottery = ({ allArtworks }: PotteryProps) => {
   )
 }
 
-// Next.js will pre-render this page at build time using the props returned by `getStaticProps`.
+// Next.js will pre-render this page at build time using the props returned by `getStaticProps`
 // The data required to render the page is available at build time ahead of a user’s request
 export async function getStaticProps() {
   const allArtworks = getAllArtworks()
