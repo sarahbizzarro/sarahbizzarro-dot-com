@@ -1,6 +1,6 @@
 🐌
 
-wwww.sarahbizzarro.com
+www.sarahbizzarro.com
 
 built with...
 - next.js
@@ -10,3 +10,4 @@ built with...
 highlights...
 - blog (blog posts are markdown files)
 - interactive & responsive photo grid component (with shadow box)
+- mobile friendly!
